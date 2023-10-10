@@ -138,6 +138,8 @@ def show_key_map():
     table.add_row("Run Capping/ De-Capping example", "e", "Automated capping and decapping ")
     table.add_row("        ", " ", "based on user input parameters")
     table.add_row()
+    table.add_row("Run Capping/ De-Capping example fixed", "t", "based on fixed para ")
+    table.add_row()
     table.add_row("show key map", "o", "show keymap again")
 
     table1 = Table(title="Capping/ De-Capping example")
@@ -591,6 +593,8 @@ if __name__ == "__main__":
                      time.sleep(0.5)
                      cylinder.set_maximum_speed(100)
                      cylinder.location(0)
+                     time.sleep(2)
+                     gripper.location(1000)
         #             time.sleep(0.5)
         #             for i in range(totrotangleI):
         #                 rotating_gripper.relative_rotation_angle(angle = -1*speed)
